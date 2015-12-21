@@ -1,0 +1,346 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{awesome-deedy}
+
+\usepackage{import}
+\import{}{personal-details.tex}
+
+\addbibresource{../publications.bib}
+
+\renewcommand*{\boldnames}{}
+\forcsvlist{\listadd\boldnames}
+  {{1aeb3164d865be1468909dd20383fb55}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\namesection{Matthew}{McGill}{ \urlstyle{same} %\url{http://debarghyadas.com} \\
+%\href{mailto:matthew\_mcgill@hotmail.com}{matthew\_mcgill@hotmail.com} |
+%+61 422 278 688 \\
+%1/206 Gale Rd, Maroubra, 2035, Australia
+%}
+
+\vspace*{5mm}
+\makecvheader
+\vspace{-10pt}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+\vspace{-15pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{The University of \newline Queensland}
+\descript{Bachelor of Information Technology (Honours)}
+\location{Dec 2000 | Brisbane, Australia %\\ Cum. GPA: N/A
+}
+\sectionsep
+
+\subsection{St Peters Lutheran College}
+\descript{Senior Certificate}
+\location{Dec 1996 | Brisbane, Australia}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Patents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Patents} 
+
+\subsection{A System and Method for \newline Processing Multi-Modal \newline Input}
+\descript{Australian Provisional Patent 2006903132}
+\location{Co-Inventors}
+Claude Sammut \textbullet{} M. Waleed Kadous
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Experienced}
+C++ \textbullet{} Java \textbullet{} C \textbullet{} Shell \\
+Git \textbullet{} Subversion \textbullet{} CVS \\
+\location{Familiar}
+Python \textbullet{} \LaTeX\ \\
+\sectionsep
+
+\subsection{Robotics / AI}
+\location{Experienced}
+Robot Operating System (ROS) \\
+SLAM \textbullet{} Autonomous Navigation \\
+Path Planning \textbullet{} User Interaction \\
+System Integration \\
+Autonomous Systems\\
+Natural Language Processing \\
+\location{Familiar}
+Soldering \\
+\sectionsep
+
+\subsection{Operating Systems}
+\location{Installation}
+Linux \textbullet{} Windows \textbullet{} OS X \\
+\location{Administration}
+Linux \textbullet{} Windows \\
+\location{Familiar}
+OS X \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+\subsection{Computer Science}
+Artificial Intelligence \textbullet{} Robotics \\
+Computer Vision \textbullet{} SLAM \\
+Autonomous Systems \\
+User Interfaces \\
+Natural Language Processing \\
+\sectionsep
+
+\subsection{Other}
+Reading \textbullet{} Computer Games \textbullet{} Travel \\
+Baseball \textbullet{} Tennis \textbullet{} Swimming \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{The University of New South Wales}
+\descript{| Assistant Lecturer }
+\location{2010 – Present | Sydney, Australia }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Tutored and lectured a course on robotics software architectures, specifically using the Robot Operating System(ROS).
+\item Managed a teaching/research laboratory comprising of several mobile robots and fixed computing resources.
+\item Set up and administered servers to allow centralised management of users within a working robotics laboratory.
+\item Advised undergraduate and postgraduate students in the completion of a number a robotics projects.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{The University of New South Wales}
+\descript{| Research Officer }
+\location{2003 – Present | Sydney, Australia }
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked as a member of team CASualty, a team in the Robocup Rescue Robot League, working on the development of robots for search and rescue.  As a team we won a number of international competitions.
+\item Was responsible for the development of the autonomous navigation and path planning modules used by all robots on team CASualty.
+\item Was invited to demonstrate/instruct at international robotics events in Thailand, Turkey and Australia.
+\item Worked with graduate/postgraduate researchers to integrate separate robotics research projects into a working system.
+\item Developed FrameScript a scripted language for processing spoken and multi-modal inputs.  FrameScript would subsequently then be patented.
+\item Using FrameScript and Mica, middleware for communicating between intelligent agents, constructed a smart room that responded to spoken and gestured inputs.
+\item Wrote documentation and example code for FrameScript and Mica.
+\item Built a server wrapping a speech recognition engine to allow speech recognition and text-to-speech to be performed on audio sent over a network, including from low powered mobile devices.
+\item Performed maintenance and repairs on a variety of mobile and fixed robotics platforms.
+\item Set up and ran robotics demonstrations for media and marketing presentations.
+%\item Supported and advised postgraduate and undergraduate students in a range of research projects.
+\item Worked with a heterogeneous variety of robots including wheeled, tracked, humanoid and fixed.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{The University of Queensland}
+\descript{| Research Assistant }
+\location{2001 – 2002 | Brisbane, Australia}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed, set up and ran HCI experiments for analysing the effects of graph layout on human comprehension.
+\item Undertook statistical analysis of the experimental results to determine what if any effect the layout of UML diagrams had on human understanding.
+\item Wrote up and presented the experiments, their results and analysis at conferences and in journal articles.
+%\item Gave presentations at international conferences.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{The University of Queensland}
+\descript{| Tutor }
+\location{1998 – 2002 | Brisbane, Australia}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Tutored in a number of university courses including: Java programming, C programming and shell scripting, concurrent systems, software life-cycle (UML, patterns, testing)
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Research}
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Head Undergrad Research}
+%\location{Jan 2014 – Present | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://%www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  Publication submitted.
+%\sectionsep
+
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies}
+%
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+%\sectionsep
+
+\end{minipage}
+
+\begin{minipage}[t]{0.95\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+
+%\bibliography{../publications}{}
+%\bibliographystyle{unsrtnat}
+%\bibliographystyle{plain}
+\nocite{InfVis2001A, InfVis2001B, VisSoft2002, %Experiment2002,
+IJHCS2004, InfVis2002, SoftVis2003, Framescript, JFR2011, ICRA2011, ACRA2009, IPIN2012, ACRA2012, Robocup2011, IROS2013}
+
+\printbibliography[title={Journals}, type=article, heading=subbibliography]
+\printbibliography[title={Conferences}, type=inproceedings, heading=subbibliography]
+\printbibliography[title={Other}, nottype=article, nottype=inproceedings, heading=subbibliography]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2011	     & Robocup Rescue  & Best in Class Autonomy \\
+2010	     & Robocup Rescue  & Best in Class Autonomy \\
+2010	     & Robocup Rescue  & Best in Class Mobility \\
+2009	     & Robocup Rescue  & Best in Class Autonomy \\
+2009	     & Robocup Rescue  & Best in Class Mobility \\
+2009	     & Robocup Rescue  & Innovative Operator Interfaces \\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+
+\end{document}
