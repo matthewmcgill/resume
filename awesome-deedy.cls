@@ -319,16 +319,16 @@ Last Updated on
             {\@headersocialsep}
           \href{https://github.com/\@github}{\faGithubSign\ \@github}
         }
-      \ifthenelse{\isundefined{\@stackoverflowid}}
-        {}
-        {
-          \ifbool{isstart}
-            {
-              \setbool{istart}{false} 
-            }
-            {\@headersocialsep}
-          \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\ \@stackoverflowname}
-        }
+%      \ifthenelse{\isundefined{\@stackoverflowid}}
+%        {}
+%        {
+%          \ifbool{isstart}
+%            {
+%              \setbool{istart}{false} 
+%            }
+%            {\@headersocialsep}
+%          \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\ \@stackoverflowname}
+%        }
       \ifthenelse{\isundefined{\@linkedin}}
         {}
         {
