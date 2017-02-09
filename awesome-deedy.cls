@@ -337,7 +337,7 @@ Last Updated on
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSign\ \@linkedin}
+          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\ \@linkedin}
         }
       \ifthenelse{\isundefined{\@twitter}}
         {}
@@ -405,7 +405,7 @@ Last Updated on
 \newcommand*{\makeletterclosing}{
   \vspace{3.4mm}
   \lettertextstyle{\@letterclosing} \\\\
-  \letternamestyle{\@firstname \@lastname}
+  \letternamestyle{\@firstname \hspace{0.0cm} \@lastname}
   \ifthenelse{\isundefined{\@letterenclosure}}
     {\\}
     {

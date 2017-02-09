@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-SOURCE_FILES="resume.tex personal-details.tex awesome-deedy.cls ../publications.bib"
+SOURCE_FILES="resume.tex personal-details.tex awesome-deedy.cls publications.bib"
 LETTERS=`ls coverletters/*.tex`
 
 while true
