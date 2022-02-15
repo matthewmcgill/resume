@@ -31,7 +31,8 @@
 % Needed to use \ifxetex-\else-\fi statement
 \usepackage{xcolor,ifxetex,xifthen,etoolbox}
 
-\usepackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+%\usepackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\usepackage[math-style=TeX]{unicode-math}
 
 % Needed to use icons from font-awesome
 % (https://github.com/posquit0/latex-fontawesome)
@@ -96,7 +97,7 @@
 %\newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,0)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{7pt}{9pt}\selectfont 
-Last Updated on
+Last updated on
 \today
 \end{textblock}}
 
